@@ -79,16 +79,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://pearsonlatam.my.salesforce.com',
-			'https://pearsonlatam.my.site.com/pearsonbrasil',
+			'https://pearsonlatam--qalatam.sandbox.my.salesforce.com',
+			'https://pearsonlatam--qalatam.sandbox.my.site.com/pearsonbrasil',
 			gslbBaseURL,
-			'00Dd0000000fkBh',
+			'00DEc0000023aSQ',
 			'Chat_Wizard',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1-ia4.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
 				deploymentId: '5723o000001Luw1',
 				buttonId: '5733o000001Luwa',
-				baseLiveAgentURL: 'https://d.la1-c1-ia4.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3o000000XZBAEA4_1740d41e2ec',
 				isOfflineSupportEnabled: false
 			}
@@ -97,7 +97,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://pearsonlatam.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://pearsonlatam--qalatam.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
